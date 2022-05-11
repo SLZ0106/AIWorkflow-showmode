@@ -26,16 +26,16 @@ URL:
   - [1.4. Tech Stack](#14-tech-stack)
   - [1.5. Deployment Instructions](#15-deployment-instructions)
     - [1.5.1. Requirements](#151-requirements)
-    - [1.4.2. Environment and Credentials](#142-environment-and-credentials)
+    - [1.5.2. Environment and Credentials](#152-environment-and-credentials)
       - [1.5.2.1. Frontend](#1521-frontend)
       - [1.5.2.2. Backend](#1522-backend)
-  - [1.5. Development Instructions](#15-development-instructions)
-    - [1.5.1. To Test Development Build](#151-to-test-development-build)
-  - [1.6. Continuous Integration](#16-continuous-integration)
-  - [1.7. Continuous Delivery](#17-continuous-delivery)
-  - [1.8. Wikis and Poster](#18-wikis-and-poster)
-    - [1.8.1. Wiki Link](#181-wiki-link)
-    - [1.8.2. CS in the city poster](#182-cs-in-the-city-poster)
+  - [1.6. Development Instructions](#16-development-instructions)
+    - [1.6.1. To Test Development Build](#161-to-test-development-build)
+  - [1.7. Continuous Integration](#17-continuous-integration)
+  - [1.8. Continuous Delivery](#18-continuous-delivery)
+  - [1.9. Wikis and Poster](#19-wikis-and-poster)
+    - [1.9.1. Wiki Link](#191-wiki-link)
+    - [1.9.2. CS in the city poster](#192-cs-in-the-city-poster)
 
 ---
 
@@ -92,7 +92,7 @@ The requirements differ depending on how you are deploying this website. If you 
 
 If you are deploying with Docker Compose, then installing Docker and the relevant Compose libraries will be sufficient.
 
-### 1.4.2. Environment and Credentials
+### 1.5.2. Environment and Credentials
 
 #### 1.5.2.1. Frontend
 
@@ -123,7 +123,7 @@ This is to ensure that the secret is not available to the public.
 
 ---
 
-## 1.5. Development Instructions
+## 1.6. Development Instructions
 
 If you are developing this project, you will need to install the following: 
 
@@ -142,7 +142,7 @@ cd server && pip3 install -r requirements.txt
 cd ..
 ```
 
-### 1.5.1. To Test Development Build
+### 1.6.1. To Test Development Build
 
 Running the `./make_compose.sh` script will create a Docker Compose network and build the needed containers to run the app, along with any dependency that is needed.
 
@@ -167,7 +167,7 @@ For documentation regarding the `frontend`, `backend` and `database`, please con
 
 ---
 
-## 1.6. Continuous Integration
+## 1.7. Continuous Integration
 
 We decided to use GitHub actions that triggers whenever we start a pull request into `main` and `stable`. 
 
@@ -177,7 +177,7 @@ Tests can be found in `client/App.test.js` and `server/test_application.py`.
 
 ---
 
-## 1.7. Continuous Delivery
+## 1.8. Continuous Delivery
 
 We decided to use a GitHub action that triggers whenever we push to main. 
 
@@ -207,13 +207,13 @@ Other secrets are needed, you can go to the Settings page and see the secrets.
 
 ---
 
-## 1.8. Wikis and Poster
+## 1.9. Wikis and Poster
 
-### 1.8.1. Wiki Link
+### 1.9.1. Wiki Link
 
 Our [Wikis][12] contains our development progress and the achievements and goals for every release version.
 
-### 1.8.2. CS in the city poster
+### 1.9.2. CS in the city poster
 
 Our [poster](/ai-workflow-poster.pdf) is an overview of our project, containing client userstories, problems we encountered, approaches to solve them and some screenshots about our program.
 
